@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="PIDEV.jnlp">
+  <information>
+    <title>PIDEV</title>
+    <vendor>majdi</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="PIDEV.jar" size="159805" download="eager" />
+    <jar href="lib\GMapsFX-2.10.0.jar" size="154471" download="eager" />
+    <jar href="lib\commons-codec-1.9.jar" size="263965" download="eager" />
+    <jar href="lib\commons-collections-3.2.1.jar" size="575389" download="eager" />
+    <jar href="lib\commons-compress-1.4.1.jar" size="241367" download="eager" />
+    <jar href="lib\commons-lang-2.4.jar" size="261809" download="eager" />
+    <jar href="lib\commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib\controlsfx-11.0.3.jar" size="952724" download="eager" />
+    <jar href="lib\controlsfx-11.1.0.jar" size="1404130" download="eager" />
+    <jar href="lib\controlsfx-8.40.11.jar" size="985420" download="eager" />
+    <jar href="lib\controlsfx-8.40.13.jar" size="1213306" download="eager" />
+    <jar href="lib\controlsfx-8.40.15.jar" size="1402490" download="eager" />
+    <jar href="lib\controlsfx-samples-8.40.15.jar" size="792003" download="eager" />
+    <jar href="lib\flume-ng-sdk-1.9.0.jar" size="155082" download="eager" />
+    <jar href="lib\fontawesomefx-commons-8.13.jar" size="20607" download="eager" />
+    <jar href="lib\fontawesomefx-fontawesome-4.7.0-1.jar" size="135304" download="eager" />
+    <jar href="lib\fxsampler-1.0.10.jar" size="30876" download="eager" />
+    <jar href="lib\httpclient-4.4.1.jar" size="720931" download="eager" />
+    <jar href="lib\httpcore-4.4.1.jar" size="322234" download="eager" />
+    <jar href="lib\jackson-core-asl-1.9.13.jar" size="232248" download="eager" />
+    <jar href="lib\jackson-mapper-asl-1.9.13.jar" size="780664" download="eager" />
+    <jar href="lib\javafx-base-11.0.2-linux.jar" size="750047" download="eager" />
+    <jar href="lib\javafx-base-11.0.2.jar" size="302" download="eager" />
+    <jar href="lib\javafx-controls-11.0.2-linux.jar" size="2511137" download="eager" />
+    <jar href="lib\javafx-controls-11.0.2.jar" size="306" download="eager" />
+    <jar href="lib\javafx-graphics-11.0.2-linux.jar" size="4922958" download="eager" />
+    <jar href="lib\javafx-graphics-11.0.2.jar" size="306" download="eager" />
+    <jar href="lib\javafx-media-11.0.2-linux.jar" size="1404141" download="eager" />
+    <jar href="lib\javafx-media-11.0.2.jar" size="303" download="eager" />
+    <jar href="lib\javax.mail-1.6.2.jar" size="659031" download="eager" />
+    <jar href="lib\javax.mail-api-1.6.2.jar" size="219146" download="eager" />
+    <jar href="lib\je-5.0.73.jar" size="2487420" download="eager" />
+    <jar href="lib\jetty-6.1.26.jar" size="539912" download="eager" />
+    <jar href="lib\jetty-util-6.1.26.jar" size="177131" download="eager" />
+    <jar href="lib\joda-time-2.9.1.jar" size="625986" download="eager" />
+    <jar href="lib\libthrift-0.9.3.jar" size="234201" download="eager" />
+    <jar href="lib\log4j-1.2.17.jar" size="489883" download="eager" />
+    <jar href="lib\log4j-api-2.13.3.jar" size="292301" download="eager" />
+    <jar href="lib\log4j-core-2.13.3.jar" size="1714164" download="eager" />
+    <jar href="lib\log4j-flume-ng-2.13.3.jar" size="60600" download="eager" />
+    <jar href="lib\logback-classic-1.3.0-alpha4.jar" size="239334" download="eager" />
+    <jar href="lib\logback-classic-1.3.0-alpha5-javadoc.jar" size="1073597" download="eager" />
+    <jar href="lib\logback-classic-1.3.0-alpha5.jar" size="246724" download="eager" />
+    <jar href="lib\logback-core-1.3.0-alpha4.jar" size="469400" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.15-bin.jar" size="785998" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="lib\netty-3.10.6.Final.jar" size="1292696" download="eager" />
+    <jar href="lib\paranamer-2.3.jar" size="29555" download="eager" />
+    <jar href="lib\rating-java-0.1.1.jar" size="36411" download="eager" />
+    <jar href="lib\recurrence-8.4.2.jar" size="159924" download="eager" />
+    <jar href="lib\slf4j-api-1.5.6.jar" size="22338" download="eager" />
+    <jar href="lib\slf4j-api-1.7.25.jar" size="41203" download="eager" />
+    <jar href="lib\slf4j-api-1.8.0-beta1.jar" size="43916" download="eager" />
+    <jar href="lib\smtp-1.6.2.jar" size="64013" download="eager" />
+    <jar href="lib\snappy-java-1.0.4.1.jar" size="995968" download="eager" />
+    <jar href="lib\velocity-1.7.jar" size="449505" download="eager" />
+    <jar href="lib\view-8.4.2.jar" size="745112" download="eager" />
+    <jar href="lib\xz-1.0.jar" size="94672" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="PIDEV" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="pidev.PIDEV"  name="PIDEV" />
+  <update check="always"/>
+</jnlp>
