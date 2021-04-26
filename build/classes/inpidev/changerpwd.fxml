@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="446.0" prefWidth="469.0" style="-fx-background-color: #05071F;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inpidev.ChangerpwdController">
+   <children>
+      <Label layoutX="100.0" layoutY="121.0" text="Modify Your Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font></Label>
+      <TextField fx:id="pass1" layoutX="84.0" layoutY="196.0" prefHeight="26.0" prefWidth="285.0" promptText="entry new password" />
+      <TextField fx:id="pass2" layoutX="89.0" layoutY="258.0" prefHeight="26.0" prefWidth="278.0" promptText="Verify password" />
+      <Button fx:id="cha" layoutX="125.0" layoutY="341.0" mnemonicParsing="false" onAction="#changer" prefHeight="26.0" prefWidth="218.0" style="-fx-background-color: #00cc7a;" text="Modify your Password" textFill="WHITE" />
+      <ImageView fitHeight="83.0" fitWidth="200.0" layoutX="129.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/157136477_4428865550463145_8382940800908408565_n.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="displayArea" prefHeight="621.0" prefWidth="919.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inpidev.AdmincrudController">
+   <children>
+      <Button fx:id="btnsupprimer" layoutX="214.0" layoutY="596.0" mnemonicParsing="false" onAction="#supprimerOnAction" prefHeight="25.0" prefWidth="80.0" stylesheets="@css/style.css" text="supprimer" textFill="WHITE" />
+      <TableView fx:id="tuser" layoutX="296.0" layoutY="348.0" onMouseClicked="#getselected" prefHeight="270.0" prefWidth="618.0" style="-fx-background-color: white;" stylesheets="@css/style.css">
+        <columns>
+          <TableColumn fx:id="em" prefWidth="75.0" text="email" />
+          <TableColumn fx:id="ro" prefWidth="75.0" text="roles" />
+            <TableColumn fx:id="pa" prefWidth="75.0" text="password" />
+            <TableColumn fx:id="ci" prefWidth="75.0" text="cin" />
+            <TableColumn fx:id="ph" prefWidth="75.0" text="phone" />
+            <TableColumn fx:id="na" prefWidth="75.0" text="name" />
+            <TableColumn fx:id="ge" prefWidth="75.0" text="genre" />
+            <TableColumn fx:id="su" prefWidth="44.7999267578125" text="suspension" />
+            <TableColumn fx:id="rs" prefWidth="90.0" text="raisonsuspension" />
+            <TableColumn fx:id="id" prefWidth="30.4000244140625" text="id" visible="false" />
+        </columns>
+      </TableView>
+      <Label layoutX="214.0" layoutY="165.0" text="email" textFill="#1e1d1d" />
+      <Label layoutX="414.0" layoutY="165.0" text="password" />
+      <Label layoutX="213.0" layoutY="207.0" text="name" />
+      <Label layoutX="431.0" layoutY="207.0" text="cin" />
+      <Label layoutX="212.0" layoutY="252.0" text="genre" />
+      <Label layoutX="422.0" layoutY="252.0" text="phone" />
+      <TextField fx:id="tfem" layoutX="254.0" layoutY="161.0" />
+      <TextField fx:id="tfna" layoutX="254.0" layoutY="203.0" />
+      <TextField fx:id="tfge" layoutX="254.0" layoutY="248.0" />
+      <TextField fx:id="tfpa" layoutX="472.0" layoutY="161.0" />
+      <TextField fx:id="tfci" layoutX="472.0" layoutY="203.0" />
+      <TextField fx:id="tfph" layoutX="472.0" layoutY="248.0" />
+      <Label layoutX="638.0" layoutY="207.0" text="role" />
+      <TextField fx:id="tfro" layoutX="674.0" layoutY="203.0" />
+      <TextField fx:id="idm" layoutX="19.0" layoutY="115.0" prefHeight="26.0" prefWidth="31.0" visible="false" />
+      <Label layoutX="639.0" layoutY="165.0" text="Sus" />
+      <Label layoutX="633.0" layoutY="251.0" prefHeight="18.0" prefWidth="31.0" text="Rsus" />
+      <TextField fx:id="tfsu" layoutX="674.0" layoutY="161.0" />
+      <TextField fx:id="tfrs" layoutX="674.0" layoutY="248.0" />
+      <TextField fx:id="tfrch" layoutX="347.0" layoutY="322.0" prefHeight="26.0" prefWidth="150.0" />
+      <Button fx:id="btnr" layoutX="497.0" layoutY="322.0" mnemonicParsing="false" onAction="#rchOnAction" text="Recherche" textFill="#fcfcfc" />
+      <Button fx:id="tfrf" layoutX="812.0" layoutY="622.0" mnemonicParsing="false" onAction="#refrechOnAction" text="Refraiche" textFill="#fffafa" />
+      <CheckBox layoutX="593.0" layoutY="326.0" mnemonicParsing="false" onAction="#tri" text="compte Active" />
+      <Button fx:id="stat" layoutX="809.0" layoutY="322.0" mnemonicParsing="false" onAction="#gotostat" text="Statistique" textFill="WHITE" />
+      <AnchorPane layoutX="-2.0" prefHeight="671.0" prefWidth="205.0" style="-fx-background-color: #05071F;">
+         <children>
+            <ImageView fitHeight="202.0" fitWidth="186.0" layoutX="11.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/156496996_1586947771695651_2826618599145008321_n.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnlogout" layoutX="6.0" layoutY="621.0" mnemonicParsing="false" onAction="#logout" prefHeight="26.0" prefWidth="195.0" text="Logout" textFill="#d90c0c" textOverrun="CLIP" />
+            <Button layoutX="7.0" layoutY="136.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="177.0" text="Gestion de produit" />
+            <Button layoutX="7.0" layoutY="193.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="195.0" text="Gestion de Reclamation" />
+            <Button layoutX="1.0" layoutY="250.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="195.0" text="Gestion de livraison" />
+            <Button layoutX="7.0" layoutY="309.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="195.0" text="Gestion de promotion" />
+            <Button layoutX="10.0" layoutY="374.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="195.0" text="Gestion de Utilisateurs" />
+            <Button layoutX="37.0" layoutY="430.0" mnemonicParsing="false" text="Gestion de commande" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnmodifier" layoutX="214.0" layoutY="556.0" mnemonicParsing="false" onAction="#modifierOnAction" prefHeight="25.0" prefWidth="80.0" text="modifier" textFill="#f7f5f5" />
+      <Button fx:id="btnajouter" layoutX="214.0" layoutY="296.0" mnemonicParsing="false" onAction="#ajouterOnAction" prefHeight="25.0" prefWidth="80.0" text="ajouter" textFill="WHITE" />
+      <Text layoutX="403.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion de Utilisateurs">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inpidev.Profile_affController">
+   <children>
+      <Label layoutX="330.0" layoutY="404.0" text="email :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="331.0" layoutY="436.0" text="password :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="337.0" layoutY="463.0" text="Cin :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="337.0" layoutY="494.0" text="Phone :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="339.0" layoutY="528.0" text="name :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="339.0" layoutY="565.0" text="genre :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lem" layoutX="396.0" layoutY="404.0" prefHeight="18.0" prefWidth="216.0" />
+      <Label fx:id="lpa" layoutX="396.0" layoutY="435.0" prefHeight="18.0" prefWidth="189.0" />
+      <Label fx:id="lci" layoutX="396.0" layoutY="462.0" prefHeight="18.0" prefWidth="190.0" />
+      <Label fx:id="lph" layoutX="391.0" layoutY="493.0" prefHeight="18.0" prefWidth="190.0" />
+      <Label fx:id="lna" layoutX="391.0" layoutY="527.0" prefHeight="18.0" prefWidth="216.0" />
+      <Label fx:id="lge" layoutX="391.0" layoutY="564.0" prefHeight="18.0" prefWidth="216.0" />
+      <AnchorPane layoutX="14.0" layoutY="10.0" prefHeight="639.0" prefWidth="226.0">
+         <children>
+            <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="25.0" layoutY="554.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/logout.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="61.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Hyperlink fx:id="log" layoutX="75.0" layoutY="555.0" onAction="#logout" text="Logout" textFill="#080808">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Hyperlink>
+            <ImageView fitHeight="24.0" fitWidth="42.0" layoutX="27.0" layoutY="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/delete.png" />
+               </image>
+            </ImageView>
+            <Hyperlink layoutX="75.0" layoutY="600.0" onAction="#deletc" text="Delete " textFill="#0b0b0b">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Hyperlink>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="13.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/157136477_4428865550463145_8382940800908408565_n.png" />
+               </image>
+            </ImageView>
+            <Label contentDisplay="TOP" layoutX="27.0" layoutY="121.0" prefHeight="56.0" prefWidth="156.0" text="Acceuil" textFill="#205072">
+               <font>
+                  <Font name="Arial Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="TOP" layoutX="27.0" layoutY="227.0" prefHeight="56.0" prefWidth="156.0" text="Articles" textFill="#205072">
+               <font>
+                  <Font name="Arial Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="TOP" layoutX="27.0" layoutY="320.0" prefHeight="56.0" prefWidth="156.0" text="Promotions" textFill="#205072">
+               <font>
+                  <Font name="Arial Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="TOP" layoutX="27.0" layoutY="411.0" prefHeight="56.0" prefWidth="166.0" text="Réclamations" textFill="#205072">
+               <font>
+                  <Font name="Arial Bold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="240.0" prefHeight="120.0" prefWidth="710.0">
+         <children>
+            <TextField fx:id="SearchBar" alignment="TOP_LEFT" layoutX="115.0" layoutY="46.0" prefHeight="31.0" prefWidth="481.0" promptText="Rechercher..." style="-fx-background-radius: 50; -fx-background-color: #E5E7E9;" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnmod" layoutX="618.0" layoutY="599.0" mnemonicParsing="false" onAction="#modpro" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #00cc7a;" text="Modifier" textFill="#fffcfc" />
+      <Separator layoutX="237.0" layoutY="10.0" orientation="VERTICAL" prefHeight="103.0" prefWidth="4.0" />
+      <Label layoutX="430.0" layoutY="143.0" prefHeight="54.0" prefWidth="316.0" text="                     Welcome " textFill="#00cc7a">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

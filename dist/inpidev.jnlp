@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="inpidev.jnlp">
+  <information>
+    <title>inpidev</title>
+    <vendor>majdi</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="inpidev.jar" size="297447" download="eager" />
+    <jar href="lib\bcrypt-0.4.1.jar" size="42979" download="eager" />
+    <jar href="lib\bytes-0.4.6.jar" size="65802" download="eager" />
+    <jar href="lib\controlsfx-8.40.13.jar" size="1213306" download="eager" />
+    <jar href="lib\javax.mail-1.6.2 (1).jar" size="659031" download="eager" />
+    <jar href="lib\javax.mail-api-1.6.2 (1).jar" size="219146" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="lib\smtp-1.6.2 (1).jar" size="64013" download="eager" />
+    <jar href="lib\spring-security-crypto-5.2.0.RELEASE.jar" size="79958" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="inpidev" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="inpidev.Inpidev"  name="inpidev" />
+  <update check="always"/>
+</jnlp>

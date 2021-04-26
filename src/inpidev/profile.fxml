@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="682.0" prefWidth="873.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inpidev.ProfileController">
+   <children>
+      <TextField fx:id="tfem" layoutX="311.0" layoutY="211.0" />
+      <TextField fx:id="tfpa" layoutX="311.0" layoutY="251.0" />
+      <TextField fx:id="tfci" layoutX="311.0" layoutY="299.0" />
+      <TextField fx:id="tfph" layoutX="311.0" layoutY="363.0" />
+      <TextField fx:id="tfna" layoutX="311.0" layoutY="418.0" />
+      <TextField fx:id="tfge" layoutX="311.0" layoutY="475.0" />
+      <Label layoutX="263.0" layoutY="153.0" text="email" textFill="WHITE" />
+      <Label layoutX="252.0" layoutY="193.0" text="password" textFill="WHITE" />
+      <Label layoutX="278.0" layoutY="233.0" text="cin" textFill="WHITE" />
+      <Label layoutX="269.0" layoutY="273.0" text="phone" textFill="WHITE" />
+      <Label layoutX="272.0" layoutY="312.0" text="name" textFill="WHITE" />
+      <Label layoutX="272.0" layoutY="358.0" text="genre" textFill="WHITE" />
+      <Button fx:id="btnmodifier" layoutX="589.0" layoutY="559.0" mnemonicParsing="false" onAction="#modifierprofile" style="-fx-background-color: #019053;" text="Modifier" textFill="WHITE" />
+      <AnchorPane prefHeight="696.0" prefWidth="234.0">
+         <children>
+            <Hyperlink layoutX="60.0" layoutY="611.0" onAction="#sup" text="Delete" textFill="#205072">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Hyperlink>
+            <ImageView fitHeight="24.0" fitWidth="16.0" layoutX="34.0" layoutY="615.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/delete.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="182.0" layoutX="14.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/157136477_4428865550463145_8382940800908408565_n.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="32.0" layoutY="571.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/logout.png" />
+               </image>
+            </ImageView>
+            <Hyperlink layoutX="58.0" layoutY="570.0" onAction="#logout" text="Logout" textFill="#205072">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Hyperlink>
+            <Label contentDisplay="TOP" layoutX="50.0" layoutY="154.0" prefHeight="56.0" prefWidth="156.0" text="Acceuil" textFill="#205072">
+               <font>
+                  <Font name="Arial Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="TOP" layoutX="50.0" layoutY="260.0" prefHeight="56.0" prefWidth="156.0" text="Articles" textFill="#205072">
+               <font>
+                  <Font name="Arial Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="TOP" layoutX="50.0" layoutY="353.0" prefHeight="56.0" prefWidth="156.0" text="Promotions" textFill="#205072">
+               <font>
+                  <Font name="Arial Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="TOP" layoutX="50.0" layoutY="444.0" prefHeight="56.0" prefWidth="166.0" text="Réclamations" textFill="#205072">
+               <font>
+                  <Font name="Arial Bold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="206.0" layoutY="14.0" prefHeight="91.0" prefWidth="620.0">
+         <children>
+            <TextField fx:id="SearchBar" alignment="TOP_LEFT" layoutX="107.0" layoutY="30.0" prefHeight="31.0" prefWidth="481.0" promptText="Rechercher..." style="-fx-background-radius: 50; -fx-background-color: #E5E7E9;" />
+            <Separator layoutX="24.0" layoutY="1.0" orientation="VERTICAL" prefHeight="103.0" prefWidth="4.0" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="84.0" fitWidth="150.0" layoutX="14.0" layoutY="-167.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="371.0" layoutY="114.0" prefHeight="38.0" prefWidth="192.0" text="    Modifier votre " textFill="#0d0643">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="563.0" layoutY="116.0" prefHeight="18.0" prefWidth="89.0" text="Profile" textFill="#00cc7a">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
